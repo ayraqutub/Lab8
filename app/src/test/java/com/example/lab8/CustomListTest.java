@@ -61,4 +61,10 @@ public class CustomListTest {
             list.delete(city);
         });
     }
+
+    @Test
+    public void testCountCities(){
+        list = MockCityList();
+        assertEquals(1, list.countCities());
+    }
 }
