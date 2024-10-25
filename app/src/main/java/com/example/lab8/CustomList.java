@@ -78,5 +78,11 @@ public class CustomList extends ArrayAdapter<City> {
      * if not then **throw an exception**
      * */
     public void delete(City city){
+        if (cities.contains(city)){
+            cities.remove(city);
+        }
+        else{
+            throw new IllegalArgumentException();
+        }
     }
 }
